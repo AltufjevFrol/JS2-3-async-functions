@@ -9,6 +9,7 @@
  */
  
 module.exports = function (operations, callback) {
+    if(operations.length === 0) {callback(null,[])}
 var arrResult = [];
 var end = operations.length;
 /*
